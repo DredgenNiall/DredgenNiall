@@ -1,0 +1,77 @@
+:root{
+    --primary-color: #2d3436;
+    --secondary-color: #74b9ff;
+    --tertiary-color: #fdcb68;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'WebFont';
+    src: url('october_crow-webfont.woff2') format('woff2'),
+         url('october_crow-webfont.woff') format('woff'),
+         url('october__crow-webfont.ttf.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    color: var(--tertiary-color);
+    font-family: 'WebFont', Arial, sans-serif;
+}
+
+header{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-position: fixed;
+}
+
+header h1{
+    color: var(--secondary-color);
+    font-size: 64px;
+    margin: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+    letter-spacing: 3px;
+}
+
+header h1 a:hover {
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+}
+
+header nav ul li a:hover {
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}

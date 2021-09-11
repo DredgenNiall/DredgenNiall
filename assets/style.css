@@ -23,6 +23,7 @@
 body{
     color: var(--tertiary-color);
     font-family: 'WebFont', Arial, sans-serif;
+    background-color: var(--primary-color);
 }
 
 header{
@@ -31,16 +32,13 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
-    background-size: cover;
-    background-position: center;
-    background-position: fixed;
 }
 
 header h1{
     color: var(--secondary-color);
     font-size: 64px;
     margin: 20px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
     letter-spacing: 3px;
 }
 
@@ -67,11 +65,151 @@ header nav ul li {
     padding: 10px 15px;
     font-weight: bold;
     font-size: 3.5vw;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 header nav ul li a:hover {
     color: var(--tertiary-color);
     border-radius: 15px;
     text-shadow: none;
+}
+
+.jumbo{
+    background-image: url(./eso0932a.jpg);
+    background-size: stretch;
+    justify-content: center;
+    background-position: 80%;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.bulletin{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+}
+
+.bulletin h2{
+    font-size: 7vw;
+    margin: 60px 35px 15px 35px;
+    text-shadow: 0 0 20px rgba(255,255 ,255 , 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: rgba(253, 203, 104,0.3);*/
+}
+
+.about{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-section{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-section h2{
+    font-size: 52px;
+    margin: 50px 25px 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-section p{
+    font-size: 32px;
+    padding-left: 10px;
+    border-left: 3px solid var(--tertiary-color);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.port{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.portfolio-section{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.portfolio-section h2{
+    font-size: 52px;
+    margin: 50px 25px 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-section p{
+    font-size: 32px;
+    padding-left: 10px;
+    border-left: 3px solid var(--tertiary-color);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-section h3{
+    font-size: 52px;
+    margin: 50px 25px 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-section p{
+    font-size: 32px;
+    padding-left: 10px;
+    border-left: 3px solid var(--tertiary-color);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resu{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.resume-section{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.resume-section h4{
+    font-size: 52px;
+    margin: 50px 25px 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume-section p{
+    font-size: 32px;
+    padding-left: 10px;
+    border-left: 3px solid var(--tertiary-color);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -75,17 +75,17 @@ header nav ul li a:hover {
 }
 
 .jumbo{
-    background-image: url(./eso0932a.jpg);
-    background-size: stretch;
+    background-image: url(./moon.jpg);
+    background-size: cover;
+    background-position: center;
     justify-content: center;
-    background-position: 80%;
     margin-bottom: 50px;
-    flex-wrap: wrap;
+    width: 100%;
+    background-clip: border-box;
 }
 
 .bulletin{
 display: flex;
-flex-wrap: wrap;
 justify-content: flex-end;
 }
 
@@ -93,17 +93,11 @@ justify-content: flex-end;
     font-size: 7vw;
     margin: 60px 35px 15px 35px;
     text-shadow: 0 0 20px rgba(255,255 ,255 , 0.7);
-    display: flex;
-    flex-wrap: wrap;
     /*background-color: rgba(253, 203, 104,0.3);*/
 }
 
 .about{
     background-color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .about-section{
@@ -114,8 +108,6 @@ justify-content: flex-end;
 .about-section h2{
     font-size: 52px;
     margin: 50px 25px 50px 100px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .about-section p{
@@ -123,93 +115,179 @@ justify-content: flex-end;
     padding-left: 10px;
     border-left: 3px solid var(--tertiary-color);
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
 }
-
 .port{
     background-color: var(--primary-color);
-    display: flex;
+    margin-top: 300px;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .portfolio-section{
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    gap: 10%;
 }
 
-.portfolio-section h2{
-    font-size: 52px;
-    margin: 50px 25px 50px 100px;
-    display: flex;
-    flex-wrap: wrap;
+.run-buddy h3{
+    font-size: 24px;
+    margin: 5px;
 }
 
-.portfolio-section p{
-    font-size: 32px;
-    padding-left: 10px;
-    border-left: 3px solid var(--tertiary-color);
-    text-align: center;
+.run-buddy div{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    gap: 10%;
+    background-color:var(--secondary-color);
+    width: 900px;
+    border-radius: 8px;
+    
+}
+.run-buddy img{
+    border-radius: 8px;
+    max-width: 100%;
+    padding: 5px;
+    width: 900px
+}
+
+.run-buddy img:hover{
+    background-color:var(--secondary-color);
+    border-radius: 8px;
+    max-width: 100%;
+    padding: 5px;
+    width: 900px;
+    opacity: 0.3;
+}
+
+
+
+.other div{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:var(--secondary-color);
+    width: 50%;
+    border-radius: 8px;
+    
+}
+
+.other h3{
+    font-size: 24px;
+    margin: 5px;
+}
+
+.other img{
+    flex-wrap: wrap;
+    border-radius: 8px;
+    max-width: 100%;
+    padding: 5px;
+    width:700px
+}
+
+.other img:hover{
+    background-color:var(--secondary-color);
+    border-radius: 8px;
+    max-width: 100%;
+    padding: 5px;
+    width: 700px;
+    opacity: 0.3;
 }
 
 .contact{
     background-color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    
 }
 
 .contact-section{
-    display: flex;
-    justify-content: flex-start;
+    
 }
 
 .contact-section h3{
     font-size: 52px;
     margin: 50px 25px 50px 100px;
-    display: flex;
-    flex-wrap: wrap;
+    
 }
-
 .contact-section p{
     font-size: 32px;
     padding-left: 10px;
     border-left: 3px solid var(--tertiary-color);
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    
 }
-
 .resu{
     background-color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
 
+}
 .resume-section{
-    display: flex;
-    justify-content: flex-start;
+   
 }
 
 .resume-section h4{
     font-size: 52px;
     margin: 50px 25px 50px 100px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .resume-section p{
     font-size: 32px;
     padding-left: 10px;
     border-left: 3px solid var(--tertiary-color);
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px){
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+}
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px){
+
+}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px){
+   .jumbo{
+       background-image: none;
+       margin: auto;
+       border-top: 5px solid var(--tertiary-color);
+   }
+
+   .jumbo h2{
+       font-size: 0;
+       padding: 5px;
+       margin: 5px;
+   }
+
+   .about-section h2{
+       font-size: 42px;
+       margin-left: 5%;
+   }
+
+   .about-section p{
+       font-size: 28px;
+   }
+
+   }
 }

@@ -14,8 +14,9 @@ https://dredgenniall.github.io/run-buddy/
 Made by DredgenNiall
 
 ### Notes an To-Do's
--[ ] Replace placeholder tiles as I finish projects
--[ ] Replace placeholder bio in About Me section
--[ ] Attach resume
--[x] Submit project on due date
+ 
+- [ ] Replace placeholder tiles as I finish projects
+- [ ] Replace placeholder bio in About Me section
+- [ ] Attach resume
+- [x] Submit project on due date
 

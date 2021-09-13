@@ -8,7 +8,7 @@ A website that used to show off what I am learning as I go through Full Stack Bo
 * CSS
 
 ## Website
-https://dredgenniall.github.io/run-buddy/
+https://dredgenniall.github.io/DredgenNiall/
 
 ## Contribution
 Made by DredgenNiall
